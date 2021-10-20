@@ -1,0 +1,38 @@
+{
+ "properties": {
+  "displayName": "storage-network-rules",
+  "policyType": "Custom",
+  "metadata": {
+   "createdBy": "54a83bb8-82fe-49ee-a881-92622d5fd220",
+   "createdOn": "2021-10-06T18:32:44.2382037Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Restrict public storage accounts_1",
+    "policyDefinitionId": "/subscriptions/5589545b-29e8-4453-9abe-38e8c1cd2e88/providers/Microsoft.Authorization/policyDefinitions/ed61fc43-b37b-4dfd-b690-8a646d4ea976",
+    "parameters": {
+     "allowedAddressRanges": {
+      "value": [
+       "8.8.8.8/24",
+       "4.4.4.4/16"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Restrict storage account firewall rules_1",
+    "policyDefinitionId": "/subscriptions/5589545b-29e8-4453-9abe-38e8c1cd2e88/providers/Microsoft.Authorization/policyDefinitions/ed61fc43-b37b-4dfd-b690-8a646d4ea97f",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/5589545b-29e8-4453-9abe-38e8c1cd2e88/providers/Microsoft.Authorization/policySetDefinitions/692d3a5ec6af4921a9818220",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "692d3a5ec6af4921a9818220"
+}
